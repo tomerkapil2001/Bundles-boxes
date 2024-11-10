@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.heading h3 {
+    font-size: 1.5rem;
+    color: #008000;  
+    font-weight: bold;
+}
+
+.line {
+    flex-grow: 1;
+    width: 100px;
+    background-color: #ddd;  
+}
+
+ 
+.bundle-box {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+ 
+.bundle-box:hover {
+    border-color: #008000;
+}
+
+.bundle-box .box-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+ 
+.discount {
+    margin-top: -10px;  
+    align-self: flex-end; 
+    color: #008000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.discount span {
+    font-size: 0.9rem;
+    color: #008000;
+    font-weight: normal;
+}
+
+.radio-container {
+     
+    margin-left: 25px;
+    margin-top: -20px;
+    color: #008000;
+}
+
+ 
+.radio-input {
+    
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #008000;  
+    background-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+ 
+.radio-input:checked {
+    background-color: white; 
+    border-color: #008000; 
+}
+
+ 
+.radio-input:checked::before {
+    content: '';
+    position: absolute;
+    top: 2.1px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:#008000;  
+}
+
+ 
+.radio-input:hover {
+    border-color: #006400;  
+}
+
+.box-content h3 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.box-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.box-content span {
+    font-size: 0.9rem;
+    color: #008000;
+}
+
+.options {
+    display: none;
+    margin-top: 10px;
+    width: 50%;
+    gap: 16px;
+    margin-left: 25px;
+}
+.p{
+    margin-left: 25px;
+}
+
+.bundle-box .box-content .options {
+    display: none;
+}
+#sizee{
+    margin-top: 6px;
+    background-color: white;
+}
+ 
+ 
+.bundle-box:hover {
+    background-color: #e0f7e3;  
+    border-color: #008000;  
+}
+.bundle-box {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+.bundle-box .options {
+    display: none;  
+    margin-top: 10px;
+    width: 50%;
+    gap: 16px;
+    flex-direction: row;
+}
+
+.radio-input:checked + .box-content + .options {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+ 
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+.forsize{
+    font-size: 13px;
+    /* color: grey; */
+    margin-left: 4px;
+    margin-bottom: 20px;
+}
+
+select:focus {
+    border-color: #007b5e;
+}
+
+ 
+.summary {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.shipping {
+    color: #008000;
+}
+
+.total {
+    color: #000;
+    font-weight: bold;
+}
+
+ 
+.add-to-cart {
+    background-color: #007b5e;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #005941;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
